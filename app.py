@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import requests
 from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich import print as rprint
 from rich.progress import Progress
-from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
