@@ -5,8 +5,10 @@ from rich.panel import Panel
 from rich.table import Table
 from rich import print as rprint
 from rich.progress import Progress
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 console = Console()
 
 def check_player_info(target_id):
