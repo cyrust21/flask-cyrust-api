@@ -8,7 +8,7 @@ from rich import print as rprint
 from rich.progress import Progress
 
 app = Flask(__name__)
-CORS(app, resources={r"/cyrust-region/*": {"origins": "https://vid2viral.blogspot.com"}})
+CORS(app, resources={r"/cyrust-region/*": {"origins": "https://www.cyrust.app"}})
 console = Console()
 
 def check_player_info(target_id):
